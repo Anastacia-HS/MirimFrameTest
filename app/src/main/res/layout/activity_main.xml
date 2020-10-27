@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -12,19 +13,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginBottom="10dp"
         >
 
         <Button
+            android:id="@+id/btn_kim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="김감자" />
 
         <Button
+            android:id="@+id/btn_oh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="오호박" />
 
         <Button
+            android:id="@+id/btn_park"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="박딸기" />
@@ -35,9 +40,11 @@
         android:layout_height="match_parent" >
 
         <LinearLayout
+            android:id="@+id/linear_kim"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffff00" >
+            android:background="#ffff00"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -48,9 +55,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_oh"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#E91E63" >
+            android:background="#E91E63"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -61,9 +70,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_park"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#03A9F4" >
+            android:background="#03A9F4"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
